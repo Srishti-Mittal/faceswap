@@ -26,7 +26,7 @@ app.use(express.static(path.resolve(__dirname,'public')));
 
 app.post('/upload', upload.array('upload'), (req, res) => {
   if(req.files.length){
-    if(req.files.length == 1){
+    if(req.files.length !== 2){
       console.log("in error")
       return res.render('pages/index',{error: "Please upload 2 images"});
     }

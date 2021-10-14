@@ -2,24 +2,32 @@
 
 # Project 2: Face Swap
 ## Introduction
-This project calculates the size of objects based on a given reference object.It estimates size using OpenCV and Python.
+This project swaps the faces in 2 different images.
+
 ## Requirements
 1. Python
-2. NumPy
-3. OpenCV
-4. imutils
+2. Scipy
+3. Dlib
+4. OpenCV-Python
+
 ## Live Link
-https://object-dimensions-srishti.herokuapp.com/
+https://faceswap-101803157.herokuapp.com/
+
 ## Input Interface
-![Interface](interface.jpeg)
+![Interface](input_interface.jpeg)
+
 ## Input
-![Input](input2.jpeg)
-## Output
+<img src="input1.jpeg" alt="Input1" width="400" height="400">  <img src="input2.jpeg" alt="Input2" width="400" height="400">
+
+## Output   
 ![Output](output.jpeg)
+
 ## Flowchart
 ![Flowchart](flowchart.jpeg)
+
 ## Limitation
-This technique requires the image to be near perfect top-down view of the objects to calculate the accurate results. Otherwise the dimensions of the objects in the image may be distorted.
+This technique requires the images to be clear and the faces facing frontwards for accurate results.
+
 ## Submitted by:-
 ### Srishti Mittal
 ### 101803157
