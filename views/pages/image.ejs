@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+
+<main>
+  <div class="jumbotron cover2 cover">
+    <center>
+      <h1 class="font">Result</h1>
+      <h3 class="font">Swapped Images</h3>
+    </center>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- <img src=<%= image1 %> alt="Image" style="max-width: 1000px; max-height: 1000px;"> -->
+          <img src=<%= image1 %> alt="Image" style="width:100%;">
+        </div>
+        <div class="col-md-6">
+          <img src=<%= image2 %> alt="Image" style="width:100%;">
+          <!-- <img src=<%= image2 %> alt="Image" style="max-width: 1000px; max-height: 1000px;"> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+</body>
+
+</html>

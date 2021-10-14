@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="container-fluid">
+
+
+
+<main>
+  <div class="jumbotron cover">
+    <h1 class="font-white">Face Swap Web App</h1>
+    <p class="font-white">Please upload images you want to swap the faces in</p>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" accept="image/*" name="upload"  multiple>
+      <br>
+      <br>
+      <input type="submit" value="Upload">
+      <% if (typeof error != 'undefined') { %>
+        <h3 style="color: red;"><%= error %></h3>
+       <% } %>
+    </form>
+
+  </div>
+</main>
+
+</body>
+
+</html>
