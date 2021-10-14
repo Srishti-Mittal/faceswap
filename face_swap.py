@@ -1,9 +1,11 @@
 #! /usr/bin/env python
-import cv2
-import numpy as np
-import scipy.spatial as spatial
-import logging
-
+try:
+    import cv2
+    import numpy as np
+    import scipy.spatial as spatial
+    import logging
+except Exception as err:
+    print(err)
 
 ## 3D Transform
 def bilinear_interpolate(img, coords):

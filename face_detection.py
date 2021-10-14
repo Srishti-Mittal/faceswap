@@ -1,6 +1,9 @@
-import cv2
-import dlib
-import numpy as np
+try:
+    import cv2
+    import dlib
+    import numpy as np
+except Exception as err:
+    print(err)
 
 ## Face detection
 def face_detection(img,upsample_times=1):

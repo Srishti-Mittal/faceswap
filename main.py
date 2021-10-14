@@ -1,7 +1,10 @@
-import os
-import sys
-import cv2
-
+try:
+    import os
+    import sys
+    import cv2
+except Exception as err:
+    print(err)
+    
 from face_detection import select_face, select_all_faces
 from face_swap import face_swap
 
