@@ -1,4 +1,4 @@
-dlib
 numpy >= 1.13.1
+dlib
 scipy >= 0.18.0
 opencv-python-headless
